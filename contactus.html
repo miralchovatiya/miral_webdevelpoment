@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+		<link href="logo.png" rel="icon">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script>
+            // first Make one function
+            
+            function validate()  // function name
+            {
+                // take variable now if we take <form name="" than use document.forms["myform"]["ufn"].value;
+                
+                // if we use <form id="" than we use var img=document.getElementById("img");
+                
+                var fname=document.forms["myform"]["fname"].value;  
+                if(fname=="" || fname==null)  // for null condition
+                {
+                    document.getElementById('first').innerHTML=('Please fill out the User First Name');  // alert msg
+                    return false;   //return false means msg show and again on same page with value not refresh page
+                }
+                
+                var password=document.forms["myform"]["[password]"].value;  
+                if(cpasspassword=="" || password==null)  // for null condition
+                {
+                    alert('Please fill out the cpass');  // alert msg
+                    return false;   //return false means msg show and again on same page with value not refresh page
+                }
+                
+                if(pass==password)
+                {
+                }
+                else
+                {
+                    alert('Please Enter Same values');  // alert msg
+                    return false;   //return false means msg show and again on same page with value not refresh page
+                }
+                
+                var content=document.forms["myform"]["content"].value;  
+                if(content=="" || content==null)  // for null condition
+                {
+                    alert('Please fill out the User First Name');  // alert msg
+                    return false;   //return false means msg show and again on same page with value not refresh page
+                }
+            }
+            </script>
+
+
+</head>
+<body>
+    <div class="row">
+        <div class=" col-12 topnav">
+            <div class="logo">
+                <img src="img/logo1.png">
+            </div>
+               <div class="link">
+		  
+				<a href="index.html">Home Page</a>
+				<a href="aboutus.html">About Us</a>
+				<a href="business.html">Our Business</a>
+				<a href="news.html">News Information</a>
+				<a href="contactus.html">Contact Us</a>
+				<i class="fa fa-phone" style="margin-top:20px;"></i>Hotline:400-000-0000
+			</div>	
+        </div>
+    </div>
+
+</div>
+
+
+ <!-- Mainbar Start  part 1-->   
+    <div class="row contactmainbar ">
+        <div class="col-6 contactmainbar1">
+            <h2>All the words here are for<br> demonstration purposes. Please enter <br>your own business content asset.</h2><br><br>
+        
+            <div class="location">
+                <img src="img/location.png" width="50px" style="float:left;">
+                <span style="float: left;font-size: 17px;padding: 0px 20px;line-height: 1.5;">Our location <br> No. XXX, XX District,XX City</span>
+            </div><br><br><br>
+            <div class="location">
+                    <img src="img/call.png" width="50px" style="float: left;">
+                    <span style="float: left;font-size: 17px;padding: 0px 20px;line-height: 1.5;">Our location <br> No. XXX, XX District,XX City</span>
+            </div><br><br><br>
+             <div class="location">
+                    <img src="img/service.png" width="50px" style="float: left;">
+                    <span style="float: left;font-size: 17px;padding: 0px 20px;line-height: 1.5;">Our location <br> No. XXX, XX District,XX City</span>
+            </div>
+        </div>
+   
+  
+    <!-- Mainbar Start  part 2-->   
+
+    <div class="col-6 contactmainbar2">
+        <form method="post" name="myform" action="" onsubmit="return validate()>
+            <h1 align="center">Contact Us</h1>
+                <p align="center">CONTACT US</p><br><br>
+
+               <input type="text" placeholder="Name" name="fname"size="40" style="border-radius: 5px; border:1px solid transparent;padding: 15px;background-color: #F5F5F5;"><br><br>
+               <span id="first" style="color:red; font-weight:bold;"></span>
+                <input type="email" placeholder="Email" name="password" size="40" style="border-radius: 5px;border:1px solid transparent;padding: 15px;background-color: #F5F5F5;"><br><br>
+                <textarea placeholder="Content" name="cotent" rows="8" cols="45" style="border-radius: 5px;border:1px solid transparent;background-color: #F5F5F5;"></textarea><br><br>
+                <a href="#"><button class="contactbutton" style="border:0px">Submit</button></a>
+            </form>
+
+        </div>
+    </div>
+</div>
+<!-- Mainbar part1 part2 End --> 
+
+<!--Footer start-->
+<div class="row footer ">
+	<div class="col-6 ">
+		<img src="img/logo1.png">
+		<p style="font-size:14px;">Email: 1234***@XXXX.com Addr: 123, XX street, XX District, XX City</p>
+		<p><b>138-1234-XXXX</b></p>
+	</div>
+	<div class="col-6 footer2">
+		<img src="img/facebook.png" width="40px"height="40px"><a href="#"></a>
+		<img src="img/twitter.png" width="40px"height="40px"><a href="#"></a>
+		<p>© Copyright 2022 - All Rights Res    erved</p>
+	</div>
+</div>
+
+<!--Footer end-->
+
+</body>
+</html>
